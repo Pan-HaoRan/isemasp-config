@@ -1,5 +1,5 @@
 server:
-  port: 20215
+  port: 20219
   connection-timeout:
 #  servlet:
 #    context-path: /api/user-service
