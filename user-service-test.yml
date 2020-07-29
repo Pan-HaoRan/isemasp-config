@@ -6,14 +6,6 @@ server:
 spring:
   application:
     name: user-service
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:20200/eureka
-  #      defaultZone: http://admin:spic@127.0.0.1:20200/eureka
-  instance:
-    hostname: localhost
-
 ribbon:
   ConnectTimeout: 250 # 连接超时时间(ms)
   ReadTimeout: 1000 # 通信超时时间(ms)
