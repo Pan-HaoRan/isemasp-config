@@ -1,0 +1,5 @@
+data:
+  env: config-client-prod
+  user:
+    username: config-client-prod
+    password: 88888888
