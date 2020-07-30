@@ -21,7 +21,7 @@ feign:
 logging:
   level:
     com.spic.isemasp.user.log: debug
-env: config-client-test-ceshi
+env: user-service-test
 user:
   username: user-service-test
   password: test
