@@ -1,0 +1,27 @@
+server:
+  port: 20218
+  connection-timeout:
+#  servlet:
+#    context-path: /api/user-service
+spring:
+  application:
+    name: user-service
+ribbon:
+  ConnectTimeout: 250 # 连接超时时间(ms)
+  ReadTimeout: 1000 # 通信超时时间(ms)
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 1 # 同⼀一服务不不同实例例的重试次数
+  MaxAutoRetries: 1 # 同⼀一实例例的重试次数n
+
+feign:
+  hystrix:
+    enabled: true # 开取Feign的熔断功能
+
+#在com.spic.isemasp.user.log目录下定义日志级别
+logging:
+  level:
+    com.spic.isemasp.user.log: debug
+env: config-client-test-ceshi
+user:
+  username: user-service-test
+  password: test
