@@ -27,7 +27,7 @@ user:
   password: prod
 
 data:
-  env: config-client-prod
+  env: config-client-prod-ceshi
   user:
     username: config-client-prod
     password: 88888888
